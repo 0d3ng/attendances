@@ -42,5 +42,5 @@ jobs:
         with:
           to: ${{ secrets.TELEGRAM_TO }}
           token: ${{ secrets.TELEGRAM_TOKEN }}
-          message: Thanks ${{ github.event.pull_request.user.login }} has been submitted
+          message: Thanks ${{ github.event.pull_request.head.repo.full_name }} has been submitted
           sticker: \ud83d\udc4d
