@@ -59,4 +59,5 @@ jobs:
           to: ${{ secrets.TELEGRAM_TO }}
           token: ${{ secrets.TELEGRAM_TOKEN }}
           format: html
-          message: <code>Thanks ${{ github.event.head_commit.author.name }} has been submitted in ${{ steps.date.outputs.date }}<code>
+          message: Thanks ${{ github.event.head_commit.author.name }} has been submitted in ${{ steps.date.outputs.date }}
+          sticker: \ud83d\udc4d
