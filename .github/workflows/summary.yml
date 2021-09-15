@@ -30,8 +30,6 @@ jobs:
           MERGE_LABELS: ""
           GITHUB_TOKEN: ${{ secrets.TOKEN }}
 
-      - name: send custom message with args
-
 #      - name: Discord notification
 #        env:
 #          DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
@@ -39,7 +37,7 @@ jobs:
 #        with:
 #          args: 'The summary ${{github.event.pull_request.head.repo.full_name }} has been accepted.'
 
-      - name: send custom message with args
+      - name: Send custom message with args
         uses: appleboy/telegram-action@master
         with:
           to: ${{ secrets.TELEGRAM_TO }}
