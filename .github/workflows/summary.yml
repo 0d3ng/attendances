@@ -58,4 +58,5 @@ jobs:
         with:
           to: ${{ secrets.TELEGRAM_TO }}
           token: ${{ secrets.TELEGRAM_TOKEN }}
-          args: '`Thanks ${{ github.event.head_commit.author.name }} has been submitted in ${{ steps.date.outputs.date }}`'
+          format: markdown
+          message: `Thanks ${{ github.event.head_commit.author.name }} has been submitted in ${{ steps.date.outputs.date }}`
